@@ -44,7 +44,31 @@ app.controller('MainController', ['$scope', '$location', '$timeout',
            "id": "4",
            "mainImage": "http://i2.au.reastatic.net/640x480/5e84d96722dda3ea2a084d6935677f64872d1d760562d530c3cabfcb7bcda9c2/main.jpg"
        }]
-   
 
+       $scope.showAddProperty = false
+
+       $scope.onMouseEnterResult = function( id ){
+          $scope.showAddProperty = id
+       }
+       $scope.onMouseLeaveResult = function(){
+          $scope.showAddProperty = false
+       }
+
+       $scope.onClickAddProperty = function( property ){
+          $scope.saved.push( property )
+       }
+
+       // ===================   Remove Property ========================= //
+
+       $scope.onMouseEnterSaved = function( id ){
+          $scope.showRemoveProperty = id
+       }
+       $scope.onMouseLeaveSaved = function(){
+          $scope.showRemoveProperty = false
+       }
+
+       $scope.onClickRemoveProperty = function( property ){
+          $scope.saved.splice( $scope.saved.indexOf( property ), 1)
+       }
 
 }])
