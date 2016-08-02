@@ -1,0 +1,27 @@
+{
+  "name": "real-estate",
+  "version": "1.0.0",
+  "description": "real-estate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specialstandard/real-estate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/specialstandard/real-estate/issues"
+  },
+  "homepage": "https://github.com/specialstandard/real-estate#readme",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "font-awesome": "^4.6.3"
+  }
+}
