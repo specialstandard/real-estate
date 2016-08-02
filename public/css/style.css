@@ -24,6 +24,7 @@ html, body {
 .column{
   width: 45%;
   padding-bottom: 10px;
+  text-align: center;
 }
 .column.left{
   padding-left: 10px;
@@ -68,6 +69,8 @@ html, body {
 .property-footer{
   border-top: 1px solid #000;
   padding: 4px;
+  text-align: left;
+  padding-left: 12px;
 }
 .mainImage {
   width: 100%;
@@ -75,6 +78,7 @@ html, body {
 }
 .logo {
   margin: 5px;
+  max-width: 90%;
 }
 .add-property{
   position: absolute;
@@ -90,6 +94,7 @@ html, body {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 15px;
+  padding-bottom:2px;
   text-align: center;
   opacity: .8;
   cursor: pointer;
@@ -108,6 +113,7 @@ html, body {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 15px;
+  padding-bottom:2px;
   text-align: center;
   opacity: .8;
   cursor: pointer;
@@ -116,4 +122,9 @@ html, body {
   -webkit-box-shadow: 1px 1px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    1px 1px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         1px 1px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.shadow-black {
+  -webkit-box-shadow: 1px 1px 2px 2px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 2px 2px #000;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 2px 2px #000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }

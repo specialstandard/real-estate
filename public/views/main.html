@@ -11,12 +11,12 @@
 
         <div class="property-header" ng-style="{'background-color': property.agency.brandingColors.primary}" >
           <img class="logo" ng-src="{{property.agency.logo}}">
-          <div class="id">ID: {{property.id}}</div>
+          <!--<div class="id">ID: {{property.id}}</div>-->
         </div>
 
         <div class="property-content">
             <img class = "mainImage" ng-src="{{property.mainImage}}">
-            <div ng-if="showAddProperty == property.id" class = "add-property"
+            <div ng-if="showAddProperty == property.id" class = "add-property shadow-black"
               ng-click="onClickAddProperty(property)" >add property</div>
         </div>
 
@@ -29,19 +29,19 @@
   </div>
 
   <div class = "column right">
-    <h1>Properties</h1>
+    <h1>Saved Properties</h1>
     <div class="column-inner">
       <div ng-repeat="property in saved track by $index" class="property shadow" ng-mouseenter="onMouseEnterSaved(property.id)"
         ng-mouseleave="onMouseLeaveSaved()">
 
         <div class="property-header" ng-style="{'background-color': property.agency.brandingColors.primary}" >
           <img class="logo" ng-src="{{property.agency.logo}}">
-          <div class="id">ID: {{property.id}}</div>
+          <!--<div class="id">ID: {{property.id}}</div>-->
         </div>
 
         <div class="property-content">
             <img class = "mainImage" ng-src="{{property.mainImage}}">
-            <div ng-if="showRemoveProperty == property.id" class = "remove-property"
+            <div ng-if="showRemoveProperty == property.id" class = "remove-property shadow-black"
               ng-click="onClickRemoveProperty(property)" >Remove property</div>
         </div>
 

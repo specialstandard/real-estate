@@ -55,7 +55,9 @@ app.controller('MainController', ['$scope', '$location', '$timeout',
        }
 
        $scope.onClickAddProperty = function( property ){
-          $scope.saved.push( property )
+          if ( $scope.saved.indexOf( property ) == -1 ){ // Only add unique properties
+             $scope.saved.push( property )
+          }
        }
 
        // ===================   Remove Property ========================= //
